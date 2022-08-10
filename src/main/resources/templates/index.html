@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Accueil</title>
+<th:block th:replace="/admin/frag :: head ">
+</th:block>
+</head>
+
+<body>
+	<div class="container-xxl position-relative bg-white d-flex p-0">
+
+		<div class="sidebar pe-4 pb-3">
+			<nav class="navbar bg-light navbar-light">
+				<div class="nav-item dropdown">
+					<a th:href="@{/logout}" type="button" class="btn btn-primary m-2"><i
+						class="fa fa-sign-out" aria-hidden="true"></i> Se déconnecter </a>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="content" th:if="${!cvs}">
+			<form th:action="@{/uploadFile}" th:object="${cv}" method="POST" enctype="multipart/form-data">
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Default file input
+						example</label> 
+					<input accept="application/pdf" xclass="form-control" name="cv" type="file" id="formFile" required>
+
+					<input type="hidden" value="candidat" /> 
+					<input type="hidden" value="sousCategorie" />
+					<button type="submit" class="btn btn-primary">Valider</button>
+				</div>
+			</form>			
+		</div>
+		
+		<div class="content" th:if="${cvs}">
+			<a th:href="@{/download}" type="button" class="btn btn-primary m-2"><i class="fa fa-file" aria-hidden="true"></i> Telecharger  </a>
+		</div>
+		
+	</div>
+
+	<th:block th:replace="/admin/frag :: footer ">
+	</th:block>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title> Accueil </title>
+	<th:block th:replace="/admin/frag :: head "> </th:block>
+</head>
+
+<body>
+	<div class="container-xxl position-relative bg-white d-flex p-0">
+		
+
+		<th:block th:replace="/admin/frag :: side-nav "> </th:block>
+		<!-- Content Start -->
+		<div class="content">
+			<!-- Navbar Start -->
+			<nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+				<a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+					<h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+				</a>
+				<a href="#" class="sidebar-toggler flex-shrink-0">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="navbar-nav align-items-center ms-auto">
+					<div class="nav-item dropdown">
+						<div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+						</div>
+					</div>
+					<div class="nav-item dropdown">
+						<a href="/logout" class="d-none d-lg-inline-flex"><i class="fa fa-sign-out"></i>Logout</a>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+
+		</div>
+		<!-- Content End -->
+
+
+		<!-- Back to Top -->
+		<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+	</div>
+
+	<th:block th:replace="/admin/frag :: footer "> </th:block>
+
+</html>
