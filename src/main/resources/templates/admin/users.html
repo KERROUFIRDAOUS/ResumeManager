@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DASHMIN - Bootstrap Admin Template</title>
+    <title>Candidats</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,11 +45,7 @@
         <!-- Sidebar Start -->
 		<div class="sidebar pe-4 pb-3">
 			<nav class="navbar bg-light navbar-light">
-				<a href="/admin" class="navbar-brand mx-4 mb-3">
-					<h3 class="text-primary">
-						<i class="fa fa-hashtag me-2"></i>CV
-					</h3>
-				</a>
+				<pre>         <a href="/"><img src="https://i.ibb.co/QYfmHkG/logo.png" alt="logo" width="100"></a></pre>
 				<div class="navbar-nav w-100">
 					<a href="/admin" class="nav-item nav-link"><i
 						class="fa fa-tachometer-alt me-2"></i>Dashboard</a> <a
@@ -114,7 +110,9 @@
 								<td th:text="${user.email}"></td>
 								<td th:text="${user.sousCategories.nom}"></td>
 								<td>
-								<a th:href="@{/telechargement(id=${user.id})}" type="button" class="btn btn-primary m-2"><i class="fa fa-file" aria-hidden="true"></i>   </a>
+								
+									<a th:href="@{/telechargement(id=${user.id})}" type="button" class="btn btn-primary m-2"><i class="fa fa-file" aria-hidden="true"></i>   </a>
+							
 								</td>
 							</tr>
 						</tbody>
