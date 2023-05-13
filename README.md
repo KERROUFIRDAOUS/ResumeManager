@@ -1,5 +1,8 @@
 # ResumeManager
 
+
+![h](https://github.com/KERROUFIRDAOUS/ResumeManager/assets/52587545/84a57ab8-fe77-4dc0-844a-a6542d7a3143)
+
 Recruitment is a lengthy and challenging process, yet it is a fundamental tool for enhancing a company's competitiveness and performance, serving as a crucial step in its development.
 
 For every job opening, numerous applications pour in via email, social media messages, and phone calls. Managing and processing these responses across different channels can be time-consuming and labor-intensive.
